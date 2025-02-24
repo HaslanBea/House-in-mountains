@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House in Mountains</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imagens/Casa da Montanha House in mountains.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-custom text-white text-center py-5">
+        <div class="container">
+            <img src="./assets/imagens/Casa da Montanha House in mountains.png" alt="Logo do Hotel" class="logo">
+            <p class="lead">Sinta o conforto acolhedor de nossas hospedagens</p>
+            <p>Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+            <a href="#reserva" class="btn btn-light btn-lg">SAIBA MAIS</a>
+        </div>
+    </header>
+
+    <!-- Seção "Por que se hospedar?" -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h3>Delicioso café da manhã</h3>
+                    <i class="bi bi-cup-hot fs-1"></i> <!-- Ícone de café -->
+                    <p>Incluso em todas as diárias</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Ótima localização</h3>
+                    <i class="bi bi-compass fs-1"></i> <!-- Ícone de bússola -->
+                    <p>Perto dos principais pontos turísticos</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Conforto garantido</h3>
+                    <i class="bi bi-houses fs-1"></i> <!-- Ícone de casas -->
+                    <p>Quartos espaçosos e aconchegantes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Nossos Quartos" -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">NOSSOS QUARTOS</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h3>Suite Solteiro</h3>
+                    <img src="./assets/imagens/pexels-eberhardgross-976906.jpg" alt="Quarto Solteiro" class="img-fluid">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Suite Casal</h3>
+                    <img src="./assets/imagens/pexels-mrwson-4275885.jpg" alt="Quarto Casal" class="img-fluid">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>Suite Master</h3>
+                    <img src="./assets/imagens/pexels-pixabay-147411.jpg" alt="Quarto Master" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Reserva -->
+    <section id="reserva" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">FAÇA SUA RESERVA</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="entrada">Data de entrada</label>
+                        <input type="date" class="form-control" id="entrada" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="saida">Data de saída</label>
+                        <input type="date" class="form-control" id="saida" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="adultos">Adultos</label>
+                        <input type="number" class="form-control" id="adultos" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="criancas">Crianças</label>
+                        <input type="number" class="form-control" id="criancas">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="observacoes">Observações</label>
+                    <textarea class="form-control" id="observacoes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-lg">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-custom text-white text-center py-3">
+        <p>&copy; 2023 House in Mountains. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
