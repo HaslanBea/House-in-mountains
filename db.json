@@ -1,0 +1,14 @@
+{
+  "reservas": [
+    {
+      "id": "cbb6",
+      "nome": "Haslan Nascimento",
+      "email": "Leslybabylesly@gmail.com",
+      "entrada": "2025-02-03",
+      "saida": "2025-02-28",
+      "adultos": "3",
+      "criancas": "1",
+      "observacoes": "Quero uma casa daora"
+    }
+  ]
+}

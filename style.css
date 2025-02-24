@@ -7,6 +7,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: var(--cor-secundaria);
+    font-size: 16px;
 }
 
 .bg-custom {
@@ -29,6 +30,7 @@ header {
     background-image: url('assets/images/banner.jpg');
     background-size: cover;
     background-position: center;
+    padding: 100px 0;
 }
 
 .lead {
@@ -36,6 +38,7 @@ header {
     font-weight: 300;
     color: black;
 }
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -52,5 +55,63 @@ h1, h2, h3 {
 
 footer {
     margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 0;
+    }
+
+    .lead {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-custom {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
